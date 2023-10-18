@@ -3,7 +3,9 @@ import sys
 import random
 import datetime
 
+# main youtube url
 url = "https://www.youtube.com/watch?v="
+# Nested list for video url codes
 vid_IDs = [
     ["jfKfPfyJRdk", "1fueZCTYkpA&list=PL6NdkXsPL07KN01gH2vucrHCEyyNmVEx4&index=9", "_tV5LEBDs7w&list=PL6NdkXsPL07KN01gH2vucrHCEyyNmVEx4&index=14", "l98w9OSKVNA&list=PL6NdkXsPL07KN01gH2vucrHCEyyNmVEx4&index=10"],
     ["TlWYgGyNnJo&list=PL6NdkXsPL07KN01gH2vucrHCEyyNmVEx4&index=4", "Z-_TTyZUOLk&list=PL6NdkXsPL07KN01gH2vucrHCEyyNmVEx4&index=1"],
@@ -34,7 +36,7 @@ def main():
 
 
    
-
+#get_input chooses link code based on user input
 def get_input():
      current_date = datetime.datetime.now()
      current_Month = current_date.month
@@ -64,7 +66,7 @@ def get_input():
         print("ID not found enter please valid options")
       
     
-        
+#assembles the final url to input into search query        
 def open_video():
     final_url = url + str(get_input())
     print(final_url)
