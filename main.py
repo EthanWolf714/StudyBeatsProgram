@@ -60,7 +60,7 @@ def get_input():
         print("ID chosen: ",inpt, "is", found_id)        
      else:
         print("ID not found enter please valid options")
-    print("---------------------------------------------")  
+      
     
         
 def open_video():
@@ -69,7 +69,7 @@ def open_video():
     webbrowser.get(chrome_path).open(final_url)
     
 
-
+print("-----------------------------------------")
     
     
 
