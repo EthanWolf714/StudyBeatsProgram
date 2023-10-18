@@ -16,6 +16,7 @@ vid_IDs = [
 chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
 
 def main():
+    print("-------------------------------------------------------------------------")
     print(""""Welcome to lofi-beats, browser through what genre you want to listen to!
         Library:
         0.Lofi-Girl
@@ -59,7 +60,7 @@ def get_input():
         print("ID chosen: ",inpt, "is", found_id)        
      else:
         print("ID not found enter please valid options")
-        
+    print("---------------------------------------------")  
     
         
 def open_video():
