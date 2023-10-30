@@ -63,7 +63,7 @@ def get_input():
      if found_id == None:
         print("ID not found enter please valid options")
      else:
-        print("ID chosen: ",vidID, "is", found_id)  
+        print("ID chosen: " + vidID, "is" + found_id)  
       
     
 #assembles the final url to input into search query        
