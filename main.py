@@ -53,17 +53,17 @@ def get_input():
             
      
      
-     print("Know choose a option from this list: " + vidList)     
+     print("Now choose an option from this list: " + vidList)     
      vid_Choice = int(input("Enter your music option: "))
      found_id = None
      for index, vidID in enumerate(vid_IDs[genreInpt]):
         if index == vid_Choice:
             found_id = vidID
             return vidID
-     if found_id is not None:
-        print("ID chosen: ",inpt, "is", found_id)        
-     else:
+     if found_id == None:
         print("ID not found enter please valid options")
+     else:
+        print("ID chosen: ",vidID, "is", found_id)  
       
     
 #assembles the final url to input into search query        
