@@ -59,11 +59,7 @@ def get_input():
      for index, vidID in enumerate(vid_IDs[genreInpt]):
         if index == vid_Choice:
             found_id = vidID
-            return vidID
-     if found_id == None:
-        print("ID not found enter please valid options")
-     else:
-        print("ID chosen: " + vidID, "is" + found_id)  
+            return vidID 
       
     
 #assembles the final url to input into search query        
